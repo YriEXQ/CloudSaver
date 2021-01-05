@@ -9,7 +9,7 @@ using YandexDisk.Client.Http;
 using YandexDisk.Client.Protocol;
 using DriveLinker;
 
-namespace YandexAPITest
+namespace DriverYandexAPI
 {
     class YandexAPIDriver : IDriver
     {
