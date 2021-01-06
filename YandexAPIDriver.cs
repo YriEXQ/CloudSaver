@@ -14,16 +14,16 @@ namespace DriverYandexAPI
     class YandexAPIDriver : IDriver
     {
 
-        public YandexAPIDriver()
+        public YandexAPIDriver(string token)
         {
-            Auth();
+            Auth(token);
         }
 
         IDiskApi diskApi = null;
 
-        public void Auth()
+        public void Auth(string token)
         {
-            string oauthToken = "<token>";
+            string oauthToken = token;
             diskApi = new DiskHttpApi(oauthToken);
         }
 

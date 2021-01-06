@@ -6,7 +6,7 @@ namespace DriveLinker
 {
     interface IDriver
     {
-        public void Auth();
+        public void Auth(string token);
         public IEnumerable<CommonFile> GetFilesList(string path);
         public void CreateDirectory(string path, string directoryName);
         public void DownloadFile(string path, string fileName, string localFolder);
